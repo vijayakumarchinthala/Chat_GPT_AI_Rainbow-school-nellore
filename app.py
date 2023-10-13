@@ -14,7 +14,7 @@ lemmatizer = WordNetLemmatizer()
 # chat initialization
 model = load_model("chatbot_model.h5")
 # intents = json.loads(open("intents.json").read())
-data_file = open("D:\sample\AI-Chatbot-main\intents.json").read()
+data_file = open("https://raw.githubusercontent.com/vijayakumarchinthala/Chat_GPT_AI_Rainbow-school-nellore/main/intents.json").read()
 words = pickle.load(open("words.pkl", "rb"))
 classes = pickle.load(open("classes.pkl", "rb"))
 
@@ -52,7 +52,7 @@ def chatbot_response():
     msg = request.form["msg"]
 
     # Load and process the intents JSON file
-    data_file = open("D:\sample\AI-Chatbot-main\intents.json").read()
+    data_file = open("https://raw.githubusercontent.com/vijayakumarchinthala/Chat_GPT_AI_Rainbow-school-nellore/main/intents.json").read()
     intents = json.loads(data_file)
 
     # Rest of your existing code
